@@ -29,14 +29,25 @@
 // }
 
 // Solution 4
+// function reverse(str) {
+//     let newStr ="";
+
+//     for (let character of str) {
+//         newStr = character + newStr;
+//     }
+
+//     return newStr;
+// }
+
+
+// Solution 5 using the reduce method. 
+// reduce takes each value and reduces it to a single value. take two arguments, an initialValue (which will be an empty string in this case), and an arrow function
+// for reduce() first argument is new string and second is each charcter in the str.
+// logic within this reduce function is the same as for loop solution
+
 function reverse(str) {
-    let newStr ="";
-
-    for (let character of str) {
-        newStr = character + newStr;
-    }
-
-    return newStr;
+    return str.split('').reduce((newStr, character) => newStr + character, '');
 }
+
 
 module.exports = reverse;
