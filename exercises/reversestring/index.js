@@ -44,10 +44,14 @@
 // reduce takes each value and reduces it to a single value. take two arguments, an initialValue (which will be an empty string in this case), and an arrow function
 // for reduce() first argument is new string and second is each charcter in the str.
 // logic within this reduce function is the same as for loop solution
+//after putting debugger in the function, we have to manually call the reverse function now with input
 
 function reverse(str) {
+    debugger;
     return str.split('').reduce((newStr, character) => newStr + character, '');
 }
+
+reverse('hellloooo!');
 
 
 module.exports = reverse;
