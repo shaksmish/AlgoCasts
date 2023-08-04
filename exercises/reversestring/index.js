@@ -24,8 +24,19 @@
 // }
 
 // Solution 3
+// function reverse(str) {
+//     return str.split('').reverse().join('');
+// }
+
+// Solution 4
 function reverse(str) {
-    return str.split('').reverse().join('');
+    let newStr ="";
+
+    for (let character of str) {
+        newStr = character + newStr;
+    }
+
+    return newStr;
 }
 
 module.exports = reverse;
