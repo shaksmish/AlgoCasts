@@ -8,7 +8,9 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
+
 //solution 1
+
 // function chunk(array, size) {
 //     let chunked = [];
     
@@ -27,6 +29,7 @@
 // }
 
 // solution 2
+// this solution uses slice method to create a copy of the array
 function chunk(array, size) {
     const chunked = [];
     let index = 0;
@@ -37,6 +40,5 @@ function chunk(array, size) {
     }
 return chunked;
 }
-
 
 module.exports = chunk;
