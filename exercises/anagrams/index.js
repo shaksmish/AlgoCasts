@@ -8,6 +8,13 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+
+// Solution 1 using RegExp to remove spaces and punctutation
+function anagrams(stringA, stringB) {
+    stringA = stringA.replace(/[^\w]/g, "").toLowerCase();
+    stringB = stringB.replace(/[^\w]/g, "").toLowerCase();
+
+    
+}
 
 module.exports = anagrams;
